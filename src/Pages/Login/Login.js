@@ -1,18 +1,38 @@
 import React from 'react';
-import {useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import {useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
+import Loading from '../Home/Loading';
+import { Link } from 'react-router-dom';
 const Login = () => {
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
+    const [
+      signInWithEmailAndPassword,
+      user,
+      loading,
+      error,
+    ] = useSignInWithEmailAndPassword(auth);
 
-    if(user){
-      console.log (user)
+    let signInError;
+
+    if(loading || gLoading){
+     return <Loading></Loading>
+    }
+
+
+    if(error|| gError){
+      signInError=<p>{error?.message ||gError?.message}</p>
+    }
+
+    if(user||gUser){
+      console.log (user||gUser);
     }
 
     const onSubmit = data => {
       
-      console.log(data);}
+      console.log(data);
+    signInWithEmailAndPassword(data.email, data.password);}
     return (
         <div className='flex h-screen justify-center items-center'>
             <div className="card w-96 bg-base-100 shadow-xl">
@@ -67,9 +87,10 @@ const Login = () => {
  
   </label>
 </div>
-      
+     {signInError} 
       <input className='btn w-full max-w-xs text-white' type="submit" value="Login"/>
     </form>
+    <p><small>New to Giant Tech? <Link className='text-primary' to="signup"> Create  New Account</Link></small></p>
     <div className="divider">OR</div>
     <button onClick={() =>signInWithGoogle()} className="btn btn-accent">Continue with Google</button>
     

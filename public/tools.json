@@ -1,0 +1,74 @@
+[{
+    "id": 1,
+    "img": "https://i.ibb.co/Stq87JX/cpu.jpg",
+    "name": "Intel Core i7-12700K Processor DirectX 12.00",
+    "description": "",
+    "minimum order quantity": 36,
+    "available quantity": 64,
+    "price": 46000
+  }, {
+    "id": 2,
+    "img": "https://i.ibb.co/ZKWnhRx/level-20-rgb-gaming-mouse.jpg",
+    "name": "Level-20-rgb-gaming-Mouse",
+    "description": "",
+    "minimum order quantity": 62,
+    "available quantity": 5,
+    "price": 72
+  }, {
+    "id": 3,
+    "img": "https://i.ibb.co/4VBmyxg/tt-premium-x1-RGB-MX-Blue.jpg",
+    "name": "TT-premium-x1-RGB-MX-Blue Key-Board",
+    "description": "",
+    "minimum order quantity": 14,
+    "available quantity": 95,
+    "price": 56
+  }, {
+    "id": 4,
+    "img": "https://i.ibb.co/xXVYs36/motherboard.jpg",
+    "name": "Motherboard",
+    "description": "",
+    "minimum order quantity": 68,
+    "available quantity": 64,
+    "price": 76
+  }, {
+    "id": 5,
+    "img": "https://i.ibb.co/gzT7SHt/liam-briese-l-Yx-Q5-F9x-BDM-unsplash.jpg",
+    "name": "RAM 8GB HP",
+    "description": "",
+    "minimum order quantity": 75,
+    "available quantity": 2,
+    "price": 57
+  }, {
+    "id": 6,
+    "img": "https://i.ibb.co/KsfGLHs/Generic-Hard-Disc-Drive-160-Gb-SATA-3-5.jpg",
+    "name": "Generic-Hard-Disc-Drive-160-Gb-SATA-3-5",
+    "description": "",
+    "minimum order quantity": 86,
+    "available quantity": 80,
+    "price": 62
+  }, {
+    "id": 7,
+    "img": "https://i.ibb.co/fN9Zwj1/segotep-12cm-4-pin-silent-rgb-led-light-cooling-fan-cooler-for-desktop-pc-computer-case.jpg",
+    "name": "segotep-12cm-4-pin-silent-rgb-led-light-cooling-fan-cooler-for-desktop-pc",
+    "description": "",
+    "minimum order quantity": 77,
+    "available quantity": 51,
+    "price": 93
+  }, {
+    "id": 8,
+    "img": "https://i.ibb.co/DbhSGTq/speaker.jpg",
+    "name": "Speaker for Desktop",
+    "description": "",
+    "minimum order quantity": 76,
+    "available quantity": 75,
+    "price": 91
+  }, {
+    "id": 9,
+    "img": "https://i.ibb.co/WkKYSb2/3-5-MM-Audio-headset-for-desktop-computer.jpg",
+    "name": "3-5-MM-Audio-headset-for-desktop-computer",
+    "description": "",
+    "minimum order quantity": 18,
+    "available quantity": 61,
+    "price": 87
+  }]
+  

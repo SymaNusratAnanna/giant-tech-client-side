@@ -4,7 +4,7 @@ const Intro = () => {
     return (
         <div>
             <div>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen bg-base-200 py-10">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src="https://i.ibb.co/jM7QFrN/jason-jarrach-8grom09-Qa-Ds-unsplash.jpg"  alt=" "className="max-w-sm rounded-lg shadow-2xl" />
     <div>

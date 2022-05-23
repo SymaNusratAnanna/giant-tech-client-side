@@ -39,6 +39,7 @@ const Login = () => {
   <div className="card-body">
     <h2 className="text-center text-2xl font-bold">Login</h2>
     <form onSubmit={handleSubmit(onSubmit)}>
+  
     <div class="form-control w-full max-w-xs">
   <label class="label">
     <span class="label-text">What is your email?</span>
@@ -90,7 +91,7 @@ const Login = () => {
      {signInError} 
       <input className='btn w-full max-w-xs text-white' type="submit" value="Login"/>
     </form>
-    <p><small>New to Giant Tech? <Link className='text-primary' to="signup"> Create  New Account</Link></small></p>
+    <p><small>New to Giant Tech? <Link className='text-primary' to="/signup"> Create  New Account</Link></small></p>
     <div className="divider">OR</div>
     <button onClick={() =>signInWithGoogle()} className="btn btn-accent">Continue with Google</button>
     

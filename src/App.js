@@ -9,6 +9,7 @@ import Review from './Pages/Home/Review';
 import BusinessSummery from  './Pages/Home/BusinessSummery';
 import Navbar from './Pages/Home/Navbar';
 import Login from './Pages/Login/Login';
+import Signup from './Pages/Login/Signup';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
        <Route path="/review" element={<Review></Review>}></Route>
        <Route path="/businesssummery" element={<BusinessSummery></BusinessSummery>}></Route>
        <Route path="/login" element={<Login></Login>}></Route>
+       <Route path="/signup" element={<Signup></Signup>}></Route>
        
      </Routes>
     </div>

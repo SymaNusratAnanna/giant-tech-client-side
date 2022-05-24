@@ -54,6 +54,13 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
   <ul className="menu menu-horizontal p-0">
+    <li>
+      {
+        user&& <> <Link to ="/addtool">Add Product</Link>
+         <Link to ="/managetools">Manage product</Link>
+        </>
+      }
+    </li>
   <li>{user ? <button class="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to ="/login">Login</Link>}</li>
   </ul>
    

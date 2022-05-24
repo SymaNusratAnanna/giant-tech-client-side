@@ -1,74 +1,74 @@
 [{
-    "id": 1,
-    "img": "https://i.ibb.co/Stq87JX/cpu.jpg",
+  
+  "img": "https://i.ibb.co/Stq87JX/cpu.jpg",
     "name": "Intel Core i7-12700K Processor DirectX 12.00",
-    "description": "",
-    "minimum order quantity": 36,
-    "available quantity": 64,
+    "description": "Intel Core i7-12700K Processor DirectX 12.00 is one of best CPU with good configuration.",
+    "minimum_order_quantity": 36,
+    "available_quantity": 40,
     "price": 46000
   }, {
-    "id": 2,
+    
     "img": "https://i.ibb.co/ZKWnhRx/level-20-rgb-gaming-mouse.jpg",
     "name": "Level-20-rgb-gaming-Mouse",
-    "description": "",
-    "minimum order quantity": 62,
-    "available quantity": 5,
-    "price": 72
+    "description": "Level-20-rgb-gaming-Mouse is one of the most populer gaming mouse with extra functionaily.",
+    "minimum_order_quantity": 30,
+    "available_quantity": 35,
+    "price": 72000
   }, {
-    "id": 3,
+    
     "img": "https://i.ibb.co/4VBmyxg/tt-premium-x1-RGB-MX-Blue.jpg",
     "name": "TT-premium-x1-RGB-MX-Blue Key-Board",
-    "description": "",
-    "minimum order quantity": 14,
-    "available quantity": 95,
-    "price": 56
+    "description": "TT-premium-x1-RGB-MX-Blue Key-Board  is one of the most populer gaming key board with extra functionaily.",
+    "minimum_order_quantity": 20,
+    "available_quantity": 25,
+    "price": 5600
   }, {
-    "id": 4,
+    
     "img": "https://i.ibb.co/xXVYs36/motherboard.jpg",
     "name": "Motherboard",
-    "description": "",
-    "minimum order quantity": 68,
-    "available quantity": 64,
-    "price": 76
+    "description": " This Motherboard is one of the popular Motherboard with goog quality. ",
+    "minimum_order_quantity": 30,
+    "available_quantity": 35,
+    "price": 7600
   }, {
-    "id": 5,
+    
     "img": "https://i.ibb.co/gzT7SHt/liam-briese-l-Yx-Q5-F9x-BDM-unsplash.jpg",
     "name": "RAM 8GB HP",
-    "description": "",
-    "minimum order quantity": 75,
-    "available quantity": 2,
-    "price": 57
+    "description": " Hp branded RAM with 8 GB capacity ",
+    "minimum_order_quantity": 25,
+    "available_quantity": 30,
+    "price": 5700
   }, {
-    "id": 6,
+    
     "img": "https://i.ibb.co/KsfGLHs/Generic-Hard-Disc-Drive-160-Gb-SATA-3-5.jpg",
     "name": "Generic-Hard-Disc-Drive-160-Gb-SATA-3-5",
-    "description": "",
-    "minimum order quantity": 86,
-    "available quantity": 80,
-    "price": 62
+    "description": "Generic-Hard-Disc-Drive-160-Gb-SATA-3-5 is one of the best hardware with extra ordinary quality.",
+    "minimum_order_quantity": 26,
+    "available_quantity": 30,
+    "price": 6200
   }, {
-    "id": 7,
+    
     "img": "https://i.ibb.co/fN9Zwj1/segotep-12cm-4-pin-silent-rgb-led-light-cooling-fan-cooler-for-desktop-pc-computer-case.jpg",
     "name": "segotep-12cm-4-pin-silent-rgb-led-light-cooling-fan-cooler-for-desktop-pc",
-    "description": "",
-    "minimum order quantity": 77,
-    "available quantity": 51,
-    "price": 93
+    "description": "segotep-12cm-4-pin-silent-rgb-led-light-cooling-fan-cooler-for-desktop-pc will be good enough for cooling your PC",
+    "minimum_order_quantity": 27,
+    "available quantity": 31,
+    "price": 9300
   }, {
-    "id": 8,
+    
     "img": "https://i.ibb.co/DbhSGTq/speaker.jpg",
     "name": "Speaker for Desktop",
-    "description": "",
-    "minimum order quantity": 76,
-    "available quantity": 75,
-    "price": 91
+    "description": "This speaker has good and smoth Sound Quality",
+    "minimum_order_quantity": 26,
+    "available_quantity": 30,
+    "price": 9100
   }, {
-    "id": 9,
+    
     "img": "https://i.ibb.co/WkKYSb2/3-5-MM-Audio-headset-for-desktop-computer.jpg",
     "name": "3-5-MM-Audio-headset-for-desktop-computer",
-    "description": "",
-    "minimum order quantity": 18,
-    "available quantity": 61,
-    "price": 87
+    "description": "3-5-MM-Audio-headset-for-desktop-computer has extra functionality and good sound quality",
+    "minimum_order_quantity": 18,
+    "available_quantity": 21,
+    "price": 5400
   }]
   

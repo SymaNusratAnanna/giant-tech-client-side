@@ -10,6 +10,10 @@ import BusinessSummery from  './Pages/Home/BusinessSummery';
 import Navbar from './Pages/Home/Navbar';
 import Login from './Pages/Login/Login';
 import Signup from './Pages/Login/Signup';
+import RequredAuth from './Pages/Login/RequredAuth';
+import ToolsDetails from './Pages/Home/ToolsDetails';
+import AddTool from './Pages/AddTool/AddTool';
+import ManageTools from './Pages/AddTool/ManageTools/ManageTools';
 
 
 function App() {
@@ -22,8 +26,12 @@ function App() {
 
      <Routes>
        <Route path="/" element={<Home></Home>}></Route>
+       <Route path="/tool/:toolId" element={<ToolsDetails></ToolsDetails>}></Route>
+       
        <Route path="/blogs" element={<Blog></Blog>}></Route>
-       <Route path="/tools" element={<Tools></Tools>}></Route>
+       <Route path="/tools" element={<RequredAuth><Tools></Tools></RequredAuth>}></Route>
+       <Route path="/managetools" element={<RequredAuth><ManageTools></ManageTools></RequredAuth>}></Route>
+       <Route path="/addtool" element={<RequredAuth><AddTool></AddTool></RequredAuth>}></Route>
        <Route path="/myportfolio" element={<MyPortfolio></MyPortfolio>}></Route>
        <Route path="/review" element={<Review></Review>}></Route>
        <Route path="/businesssummery" element={<BusinessSummery></BusinessSummery>}></Route>

@@ -14,6 +14,7 @@ import RequredAuth from './Pages/Login/RequredAuth';
 import ToolsDetails from './Pages/Home/ToolsDetails';
 import AddTool from './Pages/AddTool/AddTool';
 import ManageTools from './Pages/AddTool/ManageTools/ManageTools';
+import BuyProduct from './Pages/AddTool/BuyingProduct/BuyProduct';
 
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
        <Route path="/businesssummery" element={<BusinessSummery></BusinessSummery>}></Route>
        <Route path="/login" element={<Login></Login>}></Route>
        <Route path="/signup" element={<Signup></Signup>}></Route>
+       <Route path="/buyproduct" element={<BuyProduct></BuyProduct>}></Route>
+       
        
      </Routes>
     </div>

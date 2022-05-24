@@ -20,7 +20,7 @@ const Tool = ({tool}) => {
           <p> Available Quantity:{available_quantity}</p>
           <p> Price:{price}</p>
           <div class="card-actions">
-            <button onClick={()=> navigateToToolsDetails(_id)} class="btn btn-primary">Buy Now</button>
+            <button onClick={()=> navigateToToolsDetails(_id)} class="btn btn-primary">Purchase</button>
           </div>
         </div>
       </div>

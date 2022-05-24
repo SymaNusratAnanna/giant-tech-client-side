@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const ToolsDetails = () => {
@@ -11,7 +12,12 @@ const ToolsDetails = () => {
         fetch(url)
         .then(res=> res.json())
         .then(data=> setTool(data));
-    },[])
+    },[toolId])
+
+    const navigate = useNavigate();
+    const navigateToBuyProduct = () =>{
+      navigate('/buyproduct');
+    }
     return (
         <>
         <div className='py-10 px-20 p-5'>
@@ -27,9 +33,10 @@ const ToolsDetails = () => {
           <p> Available Quantity:{tool.available_quantity}</p>
           <p> Price:{tool.price}</p>
           <div class="card-actions">
-            <button  class="btn btn-primary">Buy Now</button>
+          <button onClick={()=> navigateToBuyProduct()} class="btn btn-primary">Buy Now</button>
           </div>
         </div>
+        
       </div>
       </div>
       </>

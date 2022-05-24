@@ -19,6 +19,8 @@ const Login = () => {
     const location = useLocation();
  let from = location.state?.from?.pathname || "/";
 
+ //loading
+
     if(loading || gLoading){
      return <Loading></Loading>
     }
@@ -96,6 +98,8 @@ const Login = () => {
     </form>
     <p><small>New to Giant Tech? <Link className='text-primary' to="/signup"> Create  New Account</Link></small></p>
     <div className="divider">OR</div>
+
+    {/* set button */}
     <button onClick={() =>signInWithGoogle()} className="btn btn-accent">Continue with Google</button>
     
     

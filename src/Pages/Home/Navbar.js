@@ -18,11 +18,9 @@ const Navbar = () => {
         <li><Link to ="/blogs">Blogs</Link></li>
         <li><Link to ="/tools">Tools</Link></li>
         <li><Link to ="/review">Review</Link></li>
-        <li><Link to ="/businesssummery">BusinessSummery</Link></li>
-        <li><Link to ="/muportfolio">MyPortfolio</Link></li>
-     
-        
-
+       
+        <li><Link to ="/myportfolio">MyPortfolio</Link></li>
+       
     </div>
     
     return (
@@ -47,23 +45,31 @@ const Navbar = () => {
         <li><Link to ="/blogs">Blogs</Link></li>
         <li><Link to ="/tools">Tools</Link></li>
         <li><Link to ="/review">Review</Link></li>
-        <li><Link to ="/businesssummery">BusinessSummery</Link></li>
-        <li><Link to ="/muportfolio">MyPortfolio</Link></li>
+       
+        <li><Link to ="/myportfolio">MyPortfolio</Link></li>
+        <li>
+      {
+        user&& <>
+         <Link to ="/addtool">Add Product</Link>
+         <Link to ="/managetools">Manage product</Link>
+         <Link to ="/dashboard">Dashboard</Link>
+         
+        </>
+
+      }
+    </li>
         
     </ul>
   </div>
   <div className="navbar-end">
   <ul className="menu menu-horizontal p-0">
-    <li>
-      {
-        user&& <> <Link to ="/addtool">Add Product</Link>
-         <Link to ="/managetools">Manage product</Link>
-        </>
-      }
-    </li>
+   
   <li>{user ? <button class="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to ="/login">Login</Link>}</li>
   </ul>
-   
+  <label tabindex="0" className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+  <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden"></label>
   </div>
 </div> 
         </div>

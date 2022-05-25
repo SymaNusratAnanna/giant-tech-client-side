@@ -2,9 +2,16 @@ import React from 'react';
 
 
 
-const BuyProduct = () => {
+const BuyProduct = ({product}) => {
+
    
     return (
+
+  
+
+
+
+
         <div>
             
                     <form  className='grid grid-cols-1 gap-3 justify-items-center mt-2'>

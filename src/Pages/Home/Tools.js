@@ -18,7 +18,7 @@ const Tools = () => {
 
     return (
         <div className='my-28 text-center'>
-            <h2>Tools : {tools.length}</h2>
+            
                <h3 className='text-primary text-xl font-bold uppercase'>Our Services</h3>
                <h2 className='text-4xl'>Tools We Provided</h2>
 

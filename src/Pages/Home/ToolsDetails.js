@@ -28,10 +28,10 @@ const ToolsDetails = () => {
         </figure>
         <div class="card-body items-center text-center">
           <h2 className='text-2xl font-bold'>{tool.name}</h2>
-          <p> Description:{tool.description}</p>
-          <p> Minimum-Order-Quantity:{tool.minimum_order_quantity}</p>
-          <p> Available Quantity:{tool.available_quantity}</p>
-          <p> Price:{tool.price}</p>
+          <p><span className='text-xl font-bold'>Description:</span>{tool.description}</p>
+          <p><span className='text-xl font-bold'> Minimum-Order-Quantity:</span>{tool.minimum_order_quantity}</p>
+          <p><span className='text-xl font-bold'> Available Quantity:</span>{tool.available_quantity}</p>
+          <p><span className='text-xl font-bold'> Price:</span>{tool.price}</p>
           <div class="card-actions">
           <button onClick={()=> navigateToBuyProduct()} class="btn btn-primary">Buy Now</button>
           </div>

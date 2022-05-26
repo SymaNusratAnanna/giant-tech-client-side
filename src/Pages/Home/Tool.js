@@ -15,10 +15,10 @@ const Tool = ({tool}) => {
         </figure>
         <div class="card-body items-center text-center">
           <h2 className='text-2xl font-bold'>{name}</h2>
-          <p> Description:{description}</p>
-          <p> Minimum-Order-Quantity:{minimum_order_quantity}</p>
-          <p> Available Quantity:{available_quantity}</p>
-          <p> Price:{price}</p>
+          <p > <span className='text-xl font-bold'>Description:</span>{description}</p>
+          <p> <span className='text-xl font-bold'> Minimum-Order-Quantity:</span>{minimum_order_quantity}</p>
+          <p> <span className='text-xl font-bold'> Available Quantity:</span>{available_quantity}</p>
+          <p ><span className='text-xl font-bold'> Price:</span>{price}</p>
           <div class="card-actions">
             <button onClick={()=> navigateToToolsDetails(_id)} class="btn btn-primary">Purchase</button>
           </div>

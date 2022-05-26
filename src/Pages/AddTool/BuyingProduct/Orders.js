@@ -40,6 +40,7 @@ const Orders = () => {
 
       const order = {
           email: user.email,
+          name: user.name,
           productName: name,
           orderQuantity: orderQuantity,
           totalAmount: totalPrice,

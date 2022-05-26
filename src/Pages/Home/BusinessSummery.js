@@ -10,12 +10,17 @@ const BusinessSummery = () => {
     return (
        <>
        <h2>bgnss</h2>
+       
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-5'>
             
-            <Business img={customer}></Business>
-            <Business img={revenue}></Business>
-            <Business img={reviews}></Business>
-            <Business img={tools}></Business>
+          <div>  <Business img={customer}></Business>
+          <h2 className='text-5xl font-bold'>65</h2></div>
+           <div> <Business img={revenue}></Business>
+           <h2 className='text-5xl font-bold'>450+</h2></div>
+            <div><Business img={reviews}></Business>
+            <h2 className='text-5xl font-bold'>300+</h2></div>
+           <div> <Business img={tools}></Business>
+           <h2 className='text-5xl font-bold'> 490+</h2></div>
         </div>
        </>
     );

@@ -17,13 +17,14 @@ import ManageTools from './Pages/AddTool/ManageTools/ManageTools';
 import BuyProduct from './Pages/AddTool/BuyingProduct/BuyProduct';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
-import AddaReview from './Pages/Dashboard/AddaReview';
+import AddReview from './Pages/Dashboard/AddReview';
 import Notfound from './Pages/Notfound';
 import Objectives from './Pages/Home/Objectives';
 import MyProfile from './Pages/Dashboard/MyProfile';
  import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Orders from './Pages/AddTool/BuyingProduct/Orders';
+import RequireAdmin from './Pages/Login/RequireAdmin';
 
 
 function App() {
@@ -49,8 +50,10 @@ function App() {
        <Route path="/managetools" element={<RequredAuth><ManageTools></ManageTools></RequredAuth>}></Route>
        <Route path="/addtool" element={<RequredAuth><AddTool></AddTool></RequredAuth>}></Route>
        <Route path="/dashboard" element={<RequredAuth><Dashboard></Dashboard></RequredAuth>} >
+         
           <Route index element={<MyOrders></MyOrders>}></Route>
-          <Route path="addreview" element={<AddaReview></AddaReview>} ></Route>
+          <Route path="addreview" element={<AddReview></AddReview>} ></Route>
+          {/* <Route path="addreview" element={<RequireAdmin><AddReview></AddReview></RequireAdmin>} ></Route> */}
           <Route path="myprofile" element={<MyProfile></MyProfile>} ></Route>
           
           

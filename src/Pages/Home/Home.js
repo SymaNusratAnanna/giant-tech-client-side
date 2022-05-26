@@ -3,9 +3,12 @@ import Footer from '../Footer/Footer';
 import Banner from './Banner';
 import BusinessSummery from './BusinessSummery';
 import Intro from './Intro';
-import Review from './Reviews';
-import Tools from './Tools';
+
+
 import Objectives from './Objectives';
+import HomeTools from './HomeTools';
+
+import Reviews from './Reviews';
 
 const Home = () => {
     return (
@@ -14,9 +17,10 @@ const Home = () => {
             <Banner></Banner>
             <Intro></Intro>
 
-            <Tools></Tools>
+            <HomeTools></HomeTools>
             <BusinessSummery></BusinessSummery>
-            <Review></Review>
+            
+            <Reviews></Reviews>
             
             <Objectives></Objectives>
             <Footer></Footer>

@@ -51,9 +51,9 @@ const Navbar = () => {
         <li>
       {
         user&& <>
-         <Link to ="/addtool">Add Product</Link>
-         <Link to ="/managetools">Manage product</Link>
+        
          <Link to ="/dashboard">Dashboard</Link>
+        
          
         </>
 

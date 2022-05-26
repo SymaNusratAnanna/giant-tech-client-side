@@ -5,19 +5,20 @@ import BusinessSummery from './BusinessSummery';
 import Intro from './Intro';
 import Review from './Reviews';
 import Tools from './Tools';
-import customer from '../../assets/icons/family.png'
+import Objectives from './Objectives';
 
 const Home = () => {
     return (
         <div>
             
             <Banner></Banner>
+            <Intro></Intro>
 
             <Tools></Tools>
             <BusinessSummery></BusinessSummery>
             <Review></Review>
             
-            <Intro></Intro>
+            <Objectives></Objectives>
             <Footer></Footer>
         </div>
     );

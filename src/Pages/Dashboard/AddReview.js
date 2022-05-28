@@ -6,7 +6,7 @@ const AddReview = () => {
     const onSubmit = data => {
         console.log(data);
 
-        const url = 'http://localhost:5000/addreview';
+        const url = 'https://immense-sierra-48732.herokuapp.com/addreview';
         fetch(url, {method: 'POST',
         headers: {
                    'content-type': 'application/json'
@@ -25,7 +25,7 @@ const AddReview = () => {
 
     return (
         <div className='w-80 mx-auto  text-black'>
-            <h2 className='text-3xl font-bold' >Add Product</h2>
+            <h2 className='text-3xl font-bold' >Add a Review</h2>
             <form className=' flex flex-col py-10 '  onSubmit={handleSubmit(onSubmit)}>
       <input className='mb-2'placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
       <textarea className='mb-2'placeholder='Description' {...register("description")} />

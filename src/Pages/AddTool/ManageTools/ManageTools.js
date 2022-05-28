@@ -9,7 +9,7 @@ const ManageTools = () => {
         const proceed = window.confirm('Are you sure?');
         if(proceed){
 
-            const url =`http://localhost:5000/tool/${id}`;
+            const url =`https://immense-sierra-48732.herokuapp.com/tool/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

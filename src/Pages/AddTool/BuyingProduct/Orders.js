@@ -15,7 +15,7 @@ const Orders = () => {
 
     const {_id, name,img, description, minimum_order_quantity, available_quantity, price}= toolsDetails;
     useEffect(()=>{
-        const url=`http://localhost:5000/tool/${toolId}`
+        const url=`https://immense-sierra-48732.herokuapp.com/tool/${toolId}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setToolsDetails(data))
@@ -50,7 +50,7 @@ const Orders = () => {
           img: img
       }
       console.log(order)
-        fetch('http://localhost:5000/order',{
+        fetch('https://immense-sierra-48732.herokuapp.com/order',{
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

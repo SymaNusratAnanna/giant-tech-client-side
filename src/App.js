@@ -19,12 +19,19 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import AddReview from './Pages/Dashboard/AddReview';
 import Notfound from './Pages/Notfound';
+import Orders from './Pages/AddTool/BuyingProduct/Orders'
 import Objectives from './Pages/Home/Objectives';
 import MyProfile from './Pages/Dashboard/MyProfile';
  import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Orders from './Pages/AddTool/BuyingProduct/Orders';
+
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import Payment from './Pages/Dashboard/Payment';
+import MakeAAdmin from './Pages/Dashboard/MakeAAdmin';
+import Users from './Pages/Dashboard/Users';
+
+
+
 
 
 function App() {
@@ -38,21 +45,27 @@ function App() {
      <Routes>
        <Route path="/" element={<Home></Home>}></Route>
        <Route path="/home" element={<Home></Home>}></Route>
-       {/* <Route path="/tool/:toolId" element={<ToolsDetails></ToolsDetails>}></Route> */}
+        {/* <Route path="/tool/:toolId" element={<T></ToolsDetails>}></Route>  */}
        
        
-       <Route path="/tool/:toolId" element={<Orders></Orders>}></Route>
+       <Route path="/tool/:toolId" element={<RequredAuth><Orders></Orders></RequredAuth>}></Route>
        
        <Route path="/blogs" element={<Blog></Blog>}></Route>
        <Route path="/objectives" element={<Objectives></Objectives>}></Route>
 
        <Route path="/tools" element={<RequredAuth><Tools></Tools></RequredAuth>}></Route>
        <Route path="/managetools" element={<RequredAuth><ManageTools></ManageTools></RequredAuth>}></Route>
+       <Route path="/makeadmin" element={<RequredAuth><MakeAAdmin></MakeAAdmin></RequredAuth>}></Route>
+       
+
        <Route path="/addtool" element={<RequredAuth><AddTool></AddTool></RequredAuth>}></Route>
        <Route path="/dashboard" element={<RequredAuth><Dashboard></Dashboard></RequredAuth>} >
          
           <Route index element={<MyOrders></MyOrders>}></Route>
           <Route path="addreview" element={<AddReview></AddReview>} ></Route>
+          <Route path="users" element={<RequredAuth><Users></Users></RequredAuth>}></Route>
+          
+          <Route path="payment/:id" element={<Payment></Payment>} ></Route>
           {/* <Route path="addreview" element={<RequireAdmin><AddReview></AddReview></RequireAdmin>} ></Route> */}
           <Route path="myprofile" element={<MyProfile></MyProfile>} ></Route>
           

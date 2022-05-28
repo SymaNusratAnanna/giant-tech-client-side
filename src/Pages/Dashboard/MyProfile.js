@@ -8,9 +8,9 @@ const MyProfile = () => {
 
     
     return (
-        <div>
-            <h2 className="card-title">Name : {user?.displayName}</h2>
-        <h2 className="card-title">Email : {user?.email}</h2>
+        <div className='items-center py-10'>
+            <h2 className=" text-center font-bold text-2xl">Name : {user?.displayName}</h2>
+        <h2 className=" text-center font-bold text-2xl">Email : {user?.email}</h2>
         </div>
     );
 };

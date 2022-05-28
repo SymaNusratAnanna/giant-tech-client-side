@@ -8,12 +8,12 @@ const Dashboard = () => {
 
   const [user] = useAuthState(auth);
   const [admin] = useAdmin(user);
-  console.log(admin)
+  
     return (
         <div class="drawer drawer-mobile">
   <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col items-center justify-center">
-      <h2 className='text-5xl font-bold'> Welcom to Dashboard</h2>
+  <div class="drawer-content flex flex-col ">
+      <h2 className='text-5xl font-bold text-center text-primary'> Welcome to Dashboard</h2>
       <Outlet></Outlet>
     {/* page content here */}
   
@@ -30,11 +30,14 @@ const Dashboard = () => {
       <li><Link to="/dashboard/myprofile">My Profile</Link></li> 
 
       { admin && <>
-                        <li><Link to="/dashboard/users">All Users</Link></li>
+                        <li><Link to="/dashboard/users">Make Admin</Link></li>
                         {/* <li><Link to="/dashboard/addreview">Add a Review</Link></li> */}
                        <li> <Link to ="/addtool">Add Product</Link></li>
+                       <li> <Link to ="/makeadmin">Make Admin</Link></li>
+                       
          <li><Link to ="/managetools">Manage product</Link></li>
                     </>}
+                 
       
     </ul>
   

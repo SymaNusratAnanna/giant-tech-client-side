@@ -10,7 +10,7 @@ const Reviews = () => {
 
  useEffect(()=>{
     //  fetch data
-     fetch('http://localhost:5000/review')
+     fetch('https://immense-sierra-48732.herokuapp.com/review')
      .then(res => res.json())
      .then(data=>{
          console.log(data)
@@ -26,14 +26,14 @@ const Reviews = () => {
        <section>
            <div>
                <div>
-                   <h4 className='text-2xl  text-center text-primary font-bold'>Reviews</h4>
+                   <h4 className='text-2xl  text-center text-primary font-bold py-10'>Reviews</h4>
                    <h2 className='text-3xl  text-center '> What our Customer say?</h2>
                </div>
                <div>
                   <img src={qoute} className=" w-24 lg:w-48" alt=""/>
                </div>
            </div>
-           <div className='grid grid-cols-1 md:grid-cols lg:grid-cols-3 gap-5'>
+           <div className='grid grid-cols-1 md:grid-cols lg:grid-cols-3 gap-5 px-10'>
                {reviews.map(review=><Reveiw key={review._id} review={review}></Reveiw>)}
                
            </div>

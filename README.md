@@ -1,6 +1,6 @@
 # Giant Tech A Mannufucturer Comapany
 
-This project was bootstrapped with [Giant tech](https://giant-tech.web.app).
+This project  [Giant tech](https://giant-tech.web.app).
 
 
 # Features of Giant Tech

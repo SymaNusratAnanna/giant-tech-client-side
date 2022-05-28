@@ -23,6 +23,7 @@ const {data: order, isLoading } = useQuery(['order', id], ()=> fetch(url,{ metho
         }
     }).then(res => res.json()));
     
+    
     if(isLoading){
         return <Loading></Loading>
     }
